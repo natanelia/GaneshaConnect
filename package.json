@@ -1,13 +1,13 @@
 {
-  "name": "app",
+  "name": "Ganesha Connect",
   "version": "0.0.1",
-  "description": "App description.",
+  "description": "Problem reporting app for university",
   "main": "index.js",
   "scripts": {
     "start": "node index"
   },
   "keywords": [],
-  "author": "Andrey Yamanov <tenphi@gmail.com>",
+  "author": "Institut Teknologi Bandung",
   "license": "MIT",
   "dependencies": {
     "angular": "^1.4.1",

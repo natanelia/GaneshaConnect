@@ -31,7 +31,11 @@ var config = {
   module: {
 
     loaders: [
-      { test: /\.es6.js$/, loader: 'babel-loader' },
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel-loader'
+      },
       {
         test: /\.css$/,
         loader: ExtractTextPlugin.extract('css?sourceMap!postcss-loader?sourceMap')

@@ -1,3 +1,5 @@
+import MainView from './views/main.html';
+
 function config($stateProvider, $urlRouterProvider, $locationProvider) {
   $locationProvider.html5Mode(true);
 
@@ -6,9 +8,9 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
   $stateProvider
     .state('main', {
       url: '/',
-      template: require('./main.page.html'),
-      controller: 'MainCtrl',
-      title: ''
+      template: MainView,
+      controller: 'MainController',
+      title: 'Hello World'
     });
 }
 

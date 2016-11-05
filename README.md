@@ -1,4 +1,6 @@
-# angular-express-webpack-boilerplate
+# Ganesha Connect
+
+Build from [angular-express-webpack-boilerplate](https://github.com/tenphi/angular-express-webpack-boilerplate).
 
 A comprehensive boilerplate for express+angular application that uses webpack. It works in both production and development modes and provides automatic rebundling and restaring while developing.
 

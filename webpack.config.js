@@ -6,7 +6,7 @@ var csswring = require('csswring');
 var path = require('path');
 var nodeModulesPath = path.resolve(__dirname, 'node_modules');
 var assetsPath = path.resolve(__dirname, 'public', 'assets');
-var entryPath = path.resolve(__dirname, 'frontend', 'app.es6.js');
+var entryPath = path.resolve(__dirname, 'frontend', 'app.js');
 var host = process.env.APP_HOST || 'localhost';
 
 var config = {
@@ -32,7 +32,11 @@ var config = {
   module: {
 
     loaders: [
-      { test: /\.es6.js$/, loader: 'babel-loader' },
+      {
+        test: /\.js$/,
+        exclude: /(node_modules|bower_components)/,
+        loader: 'babel-loader'
+      },
       {
         test: /\.css$/,
         loader: 'style!css!postcss'
