@@ -1,18 +1,14 @@
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <img src="#" alt="gc" style="float: left">
-      <h1 class="navbar-brand">Ganesha Connect</h1>
+<div ng-include="'header.html'"></div>
+
+<div style="background-color:#E9EBEE; color:#555555; font-family:Roboto">
+  <div style="margin: auto; width: 60%; min-width: 1024px" ng-repeat="report in reports">
+    <!-- PANEL IS LOOP-ABLE (4 COLUMN) -->
+    <div class="panel" style="height:248px; width:248px; float:left; padding:15px; margin:4px">
+      <div style="text-align:center"><img src="#" style="width:100px; height:100px;"/></div>
+      <br>
+      <h4 style="margin-top:3px;"><a href="#">{{report.title}}</a></h4>
+      <h5 style="margin-top:-3px;font-family:'roboto'">{{report.pelapor}}</h5>    
+      <h6 style="margin-top:-3px;font-family:'roboto'">{{report.date}}</h6>
     </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li class="active"><a href="#">REPORT</a></li>
-      <li><a href="user">LIST USER</a></li>
-      <li><a href="#">LOGOUT</a></li> 
-    </ul>
-  </div>
-</nav>
-
-<div ng-repeat="name in names">
-    {{ name }}
-
+  </div>  
 </div>

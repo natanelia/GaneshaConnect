@@ -1,18 +1,15 @@
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <img src="#" alt="gc" style="float: left">
-      <h1 class="navbar-brand">Ganesha Connect</h1>
-    </div>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="home">REPORT</a></li>
-      <li class="active"><a href="#">LIST USER</a></li>
-      <li><a href="#">LOGOUT</a></li> 
-    </ul>
+<div ng-include="'header.html'"></div>
+
+<div style="margin: auto; width: 60%; min-width: 1024px">
+  <br>
+  <h3>8 Users </h3>
+  <br>
+  <!-- PANEL IS LOOP-ABLE (2 COLUMN) -->
+  <div class="panel" style="height:100px; width:500px; float:left; padding:12px; margin:4px">
+    <img src="#" style="width:75px; height:75px; border-radius: 37.5px; float:left; margin-right:25px"/>
+    <a href="/"><img ng-src="block.jpg" style="width:auto; height:75px; float:right; margin-right:25px"/> </a>
+    <h4 style="margin-top:3px;">Nama ku Taro</h4>
+    <h5 style="margin-top:-3px;font-family:'roboto condensed'">taro@students.itb.ac.id</h5>   
+    <h5 style="margin-top:-3px;font-family:'roboto condensed'">Sistem Teknologi Informasi</h5>
   </div>
-</nav>
-
-<div ng-repeat="name in names">
-    User {{ name }}
-
 </div>
