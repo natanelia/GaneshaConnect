@@ -1,6 +1,6 @@
-MainController.$inject = ['$scope', '$location', '$http'];
+MainController.$inject = ['$scope', '$location', '$http', '$stateParams'];
 
-function MainController($scope, $location, $http) {
+function MainController($scope, $location, $http, $stateParams) {
   //$scope.name = 'world';
   $scope.names = ['a', 'b', 'c'];
 
@@ -16,7 +16,11 @@ function MainController($scope, $location, $http) {
   $http.get("user.json").then(function(response) {
     $scope.users = response.data;
     console.log($scope.users);
-  });  
+  }); 
+
+
+ $scope.rep = $stateParams.id - 1;
+
 }
 
 export default MainController;

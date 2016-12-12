@@ -6,7 +6,7 @@
     <div class="panel" style="height:248px; width:248px; float:left; padding:15px; margin:4px">
       <div style="text-align:center"><img src="#" style="width:100px; height:100px;"/></div>
       <br>
-      <h4 style="margin-top:3px;"><a href="#">{{report.title}}</a></h4>
+      <h4 style="margin-top:3px;"><a ng-click="detail(report.id)" ng-href="/detail/{{report.id}}">{{report.title}}</a></h4>
       <h5 style="margin-top:-3px;font-family:'roboto'">{{report.pelapor}}</h5>    
       <h6 style="margin-top:-3px;font-family:'roboto'">{{report.date}}</h6>
     </div>

@@ -1,6 +1,7 @@
 import MainView from './views/main.html';
 import LoginView from './views/login.html';
 import UserView from './views/user.html';
+import DetailView from './views/detail.html';
 
 function config($stateProvider, $urlRouterProvider, $locationProvider) {
   $locationProvider.html5Mode(true);
@@ -28,6 +29,14 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
       template: UserView,
       controller: 'MainController',
       title: 'Ganesha Connect - Users'
+    });
+
+    $stateProvider
+    .state('detail', {
+      url: '/detail/:id',
+      template: DetailView,
+      controller: 'MainController',
+      title: 'Ganesha Connect - Details'
     });
 }
 
