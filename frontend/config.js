@@ -27,7 +27,7 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
     .state('user', {
       url: '/user',
       template: UserView,
-      controller: 'MainController',
+      controller: 'UserController',
       title: 'Ganesha Connect - Users'
     });
 
@@ -35,7 +35,7 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
     .state('detail', {
       url: '/detail/:id',
       template: DetailView,
-      controller: 'MainController',
+      controller: 'ReportController',
       title: 'Ganesha Connect - Details'
     });
 }

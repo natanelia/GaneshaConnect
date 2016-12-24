@@ -12,15 +12,6 @@ function MainController($scope, $location, $http, $stateParams) {
     $scope.reports = response.data;
     console.log($scope.reports);
   });
-
-  $http.get("user.json").then(function(response) {
-    $scope.users = response.data;
-    console.log($scope.users);
-  }); 
-
-
- $scope.rep = $stateParams.id - 1;
-
 }
 
 export default MainController;

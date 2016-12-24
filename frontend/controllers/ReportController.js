@@ -1,25 +1,31 @@
-ReportController.$inject = ['$scope', '$location', '$http'];
+ReportController.$inject = ['$scope', '$stateParams', '$http'];
 
-function ReportController($scope, $location, $http) {
+function ReportController($scope, $stateParams, $http) {
   //$scope.name = 'world';
 
   $http.get("report.json").then(function(response) {
     $scope.reports = response.data;
     console.log($scope.reports);
+    for (var report in $scope.reports) {
+		console.log($stateParams.id);
+		if ($scope.reports[report].id == $stateParams.id) {
+			$scope.activereport = $scope.reports[report];
+			console.log(report);
+		}
+	}
   });
 
   $http.get("user.json").then(function(response) {
     $scope.users = response.data;
     console.log($scope.users);
+	for (var user in $scope.users) {
+		console.log($stateParams.id);
+		if ($scope.users[user].id == $scope.activereport.pelapor) {
+			$scope.activeuser = $scope.users[user];
+			console.log(user);
+		}
+	}
   }); 
-
-  $scope.detail = function(rep) {
-    $scope.reportdetail = new Object();
-    $scope.reportdetail = angular.copy($scope.reports[rep-1]);
-    console.log($scope.reportdetail);
-    console.log("done");
-  }
-
 }
 
 export default ReportController;
