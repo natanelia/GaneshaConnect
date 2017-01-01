@@ -6,17 +6,30 @@
         <h5 style="margin-top:-2px;font-family:'roboto black'">Fasilitas</h5><h5 style="float:right;margin-bottom:-13px;">{{activereport.supports}} supports</h5>
         <h3 style="margin-top:3px;margin-bottom:-13px;">{{activereport.title}}</h3><hr>
         <h5 style="margin-top:-10px;font-family:'roboto condensed'">Dipos pada {{activereport.date}}</h5>       
-        <h5 style="margin-top:-3px;font-family:'roboto condensed'">Berlokasi di {{activereport.location}}</h5>
-        <h5 style="margin-top:-3px;font-family:'roboto condensed'">Ditujukan ke {{activereport.target}}</h5>
-        <h5 style="margin-top:-3px;font-family:'roboto condensed'">{{activereport.status}}</h5>
+        <h5 style="font-family:'roboto condensed'">Berlokasi di {{activereport.location}}</h5>
+        <h5 style="font-family:'roboto condensed'">Ditujukan ke {{activereport.target}}</h5>
+        <h5 style="font-family:'roboto condensed'">{{activereport.status}}</h5><br><br>
+        <h5 style="font-family:'roboto condensed'; float:right;margin-right:20px"><button>REJECT</button></h5>
+        <h5 style="font-family:'roboto condensed'; float:right;margin-right:20px"><button>APPROVE</button></h5>
+		
     </div>
     <div class="panel" style="height:140px; width:325px; float:left; padding:35px; margin:4px">
         <h5 style="margin:-15px;font-family:'roboto condensed'"> PROFIL PELAPOR </h5><hr>
         <div style="margin:-15px;">
         <img src="#" style="width:65px; height:65px; border-radius: 32.5px; float:left; margin-right:25px"/>
         <h4 style="margin-top:3px;">{{activeuser.name}}</h4>
-        <h5 style="margin-top:-5px;font-family:'roboto condensed'">{{activeuser.email}}</h5>     
-        <h5 style="margin-top:-5px;font-family:'roboto condensed'">{{activeuser.prodi}}</h5>
+        <h5 style="font-family:'roboto condensed'">{{activeuser.email}}</h5>     
+        <h5 style="font-family:'roboto condensed'">{{activeuser.prodi}}</h5>
         </div>
+    </div>
+	<div class="panel" style="height:150px; width:325px; float:left; padding:20px; margin:4px">
+        <h5 style="font-family:'roboto condensed';font-weight:bold"> REJECT REPORT </h5>
+        <br><br><h5 style="font-family:'roboto condensed'; color:blue">The reason why this report is rejected</h5>
+		<form>
+			<input type="text"></input><br>
+			<h5 style="font-family:'roboto condensed'; float:right;margin-right:30px"><button type="submit">SEND</button></h5>
+			
+		</form>
+        
     </div>
 </div>
