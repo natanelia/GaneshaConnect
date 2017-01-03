@@ -8,9 +8,11 @@
         <h5 style="margin-top:-10px;font-family:'roboto condensed'">Dipos pada {{activereport.date}}</h5>       
         <h5 style="font-family:'roboto condensed'">Berlokasi di {{activereport.location}}</h5>
         <h5 style="font-family:'roboto condensed'">Ditujukan ke {{activereport.target}}</h5>
-        <h5 style="font-family:'roboto condensed'">{{activereport.status}}</h5><br><br>
-        <h5 style="font-family:'roboto condensed'; float:right;margin-right:20px"><button>REJECT</button></h5>
-        <h5 style="font-family:'roboto condensed'; float:right;margin-right:20px"><button>APPROVE</button></h5>
+        <h5 style="font-family:'roboto condensed'" ng-class="getStatusClass(activereport.status)">{{activereport.status}}</h5><br><br>
+		<div ng-if="showButton">
+			<h5 style="font-family:'roboto condensed'; float:right;margin-right:20px"><button id="reject" ng-click="showReject()">REJECT</button></h5>
+			<h5 style="font-family:'roboto condensed'; float:right;margin-right:20px"><button>APPROVE</button></h5>
+		</div>
 		
     </div>
     <div class="panel" style="height:140px; width:325px; float:left; padding:35px; margin:4px">
@@ -22,7 +24,7 @@
         <h5 style="font-family:'roboto condensed'">{{activeuser.prodi}}</h5>
         </div>
     </div>
-	<div class="panel" style="height:150px; width:325px; float:left; padding:20px; margin:4px">
+	<div class="panel" style="height:150px; width:325px; float:left; padding:20px; margin:4px" ng-show="isReject">
         <h5 style="font-family:'roboto condensed';font-weight:bold"> REJECT REPORT </h5>
         <br><br><h5 style="font-family:'roboto condensed'; color:blue">The reason why this report is rejected</h5>
 		<form>
