@@ -3,15 +3,16 @@
 <div style="margin: auto; width: 60%; min-width: 1024px">
     <div class="panel" style="height:300px; width:675px; float:left; padding:20px; margin:4px">
         <img src="#" style="width:200px; height:250px; float:left; margin-right:25px"/>
-        <h5 style="margin-top:-2px;font-family:'roboto black'">Fasilitas</h5><h5 style="float:right;margin-bottom:-13px;">{{activereport.supports}} supports</h5>
-        <h3 style="margin-top:3px;margin-bottom:-13px;">{{activereport.title}}</h3><hr>
-        <h5 style="margin-top:-10px;font-family:'roboto condensed'">Dipos pada {{activereport.date}}</h5>       
-        <h5 style="font-family:'roboto condensed'">Berlokasi di {{activereport.location}}</h5>
-        <h5 style="font-family:'roboto condensed'">Ditujukan ke {{activereport.target}}</h5>
+        <h5 style="margin-top:-2px;font-family:'roboto black';font-size:16px;font-weight:bold">Fasilitas</h5><h5 style="float:right;margin-bottom:-13px;">{{activereport.supports}} supports</h5>
+        <h3 style="margin-top:3px;margin-bottom:-13px;font-size:26px;font-weight:bold">{{activereport.title}}</h3><hr>
+        <h5 style="margin-top:-10px;font-family:'roboto condensed'">Dipos pada <span style="font-weight:bold">{{activereport.date}}</span></h5>       
+        <h5 style="font-family:'roboto condensed'">Berlokasi di <span style="font-weight:bold">{{activereport.location}}</span></h5>
+        <h5 style="font-family:'roboto condensed'">Ditujukan ke <span style="font-weight:bold">{{activereport.target}}</span></h5>
         <h5 style="font-family:'roboto condensed'" ng-class="getStatusClass(activereport.status)">{{activereport.status}}</h5><br><br>
+		<p> {{activereport.description}} </p>
 		<div ng-if="showButton">
-			<h5 style="font-family:'roboto condensed'; float:right;margin-right:20px"><button id="reject" ng-click="showReject()">REJECT</button></h5>
-			<h5 style="font-family:'roboto condensed'; float:right;margin-right:20px"><button>APPROVE</button></h5>
+			<h5 style="font-family:'roboto condensed'; float:right;margin-right:20px;"><button style="background-color:#F44336;" id="reject" ng-click="showReject()">REJECT</button></h5>
+			<h5 style="font-family:'roboto condensed'; float:right;margin-right:20px;"><button style="background-color:#9B9B9B;"><a href="home" style="color:white">APPROVE</a></button></h5>
 		</div>
 		
     </div>
@@ -26,10 +27,10 @@
     </div>
 	<div class="panel" style="height:150px; width:325px; float:left; padding:20px; margin:4px" ng-show="isReject">
         <h5 style="font-family:'roboto condensed';font-weight:bold"> REJECT REPORT </h5>
-        <br><br><h5 style="font-family:'roboto condensed'; color:blue">The reason why this report is rejected</h5>
+        <br><br><h5 style="font-family:'roboto condensed'; color:blue; font-weight:bold">The reason why this report is rejected</h5>
 		<form>
-			<input type="text"></input><br>
-			<h5 style="font-family:'roboto condensed'; float:right;margin-right:30px"><button type="submit">SEND</button></h5>
+			<input type="text" style="width:90%"></input><br>
+			<h5 style="font-family:'roboto condensed'; float:right;margin-right:30px"><button type="submit"><a href="#" style="color:white">SEND</a></button></h5>
 		</form>
     </div>
 
