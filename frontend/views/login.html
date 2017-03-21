@@ -10,13 +10,13 @@
   <h2 style="font-family:'Roboto Thin'; font-size:28px; margin-top:-80px; text-align:center; color:#ffffff"> Welcome Back, Admin!</h2>
   <br><br><br>
   <br><br><br>
-  <form action="home" method="get">
+  <form action="api/authenticate" method="post">
     <div class="form-group"  style="width:500px; align:middle;">
       <label for="element-1" class="control-label" style="color: #2962ff; font-weight:bold">Username</label>
-      <input type="text" id="element-1" class="form-control">
+      <input type="text" id="element-1" class="form-control" name="username">
       <br>
       <label for="element-2" class="control-label" style="color: #2962ff; font-weight:bold">Password</label>
-      <input type="text" id="element-2" class="form-control">
+      <input type="password" id="element-2" class="form-control" name="password">
       <br>
       <button type="submit" style="float:right">Login </button>
     </div>
