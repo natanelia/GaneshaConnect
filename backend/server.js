@@ -3,6 +3,7 @@ var path = require('path');
 var httpProxy = require('http-proxy');
 var bodyParser  = require('body-parser');
 var request = require('request');
+var cookieParser = require('cookie-parser');
 
 var proxy = httpProxy.createProxyServer();
 var app = express();
@@ -15,6 +16,7 @@ var publicPath = path.resolve(__dirname, '..', 'public');
 // use body parser so we can get info from POST and/or URL parameters
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(cookieParser());
 
 if (!isProduction) {
   // Any requests to localhost:3000/assets is proxied
@@ -48,6 +50,8 @@ apiRoutes.post('/authenticate', function(req,res) {
       console.log("login");
       console.log(result.token);
       //success = true;
+      res.cookie('gctoken', result.token, {maxAge:900000, httpOnly:false});
+      res.cookie('tokenlalala', result.token, {maxAge:900000, httpOnly:false});
       res.redirect('/home');
     } else {
       console.log("logout");

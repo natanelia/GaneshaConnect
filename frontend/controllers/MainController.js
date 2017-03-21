@@ -1,7 +1,8 @@
-MainController.$inject = ['$scope', '$location', '$http', '$stateParams'];
+MainController.$inject = ['$scope', '$location', '$http', '$stateParams', '$cookies'];
 
-function MainController($scope, $location, $http, $stateParams) {
+function MainController($scope, $location, $http, $stateParams, $cookies) {
   //$scope.name = 'world';
+  console.log('gctoken'+$cookies.get('gctoken'));
   $scope.names = ['a', 'b', 'c'];
 
   $scope.getClass = function (path) {
