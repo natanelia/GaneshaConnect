@@ -3,9 +3,9 @@
 <div style="margin: auto; width: 60%; min-width: 1024px">
     <div class="panel" style="height:300px; width:675px; float:left; padding:20px; margin:4px">
         <img src="#" style="width:200px; height:250px; float:left; margin-right:25px"/>
-        <h5 style="margin-top:-2px;font-family:'roboto black';font-size:16px;font-weight:bold">Fasilitas</h5><h5 style="float:right;margin-bottom:-13px;">{{activereport.supports}} supports</h5>
+        <h5 style="margin-top:-2px;font-family:'roboto black';font-size:16px;font-weight:bold">Fasilitas</h5><h5 style="float:right;margin-bottom:-13px;">{{activereport.voteCount}} supports</h5>
         <h3 style="margin-top:3px;margin-bottom:-13px;font-size:26px;font-weight:bold">{{activereport.title}}</h3><hr>
-        <h5 style="margin-top:-10px;font-family:'roboto condensed'">Dipos pada <span style="font-weight:bold">{{activereport.date}}</span></h5>       
+        <h5 style="margin-top:-10px;font-family:'roboto condensed'">Dipos pada <span style="font-weight:bold">{{activereport.statusChangedAt}}</span></h5>       
         <h5 style="font-family:'roboto condensed'">Berlokasi di <span style="font-weight:bold">{{activereport.location}}</span></h5>
         <h5 style="font-family:'roboto condensed'">Ditujukan ke <span style="font-weight:bold">{{activereport.target}}</span></h5>
         <h5 style="font-family:'roboto condensed'" ng-class="getStatusClass(activereport.status)">{{activereport.status}}</h5><br><br>

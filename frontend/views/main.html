@@ -7,8 +7,8 @@
       <div style="text-align:center"><img src="#" style="width:100px; height:100px;"/></div>
       <br>
       <h1 style="margin-top:3px; font-size:22px; font-family:'roboto'"><a style="color:black" ng-click="detail(report.id)" ng-href="/detail/{{report.id}}">{{report.title}}</a></h4>
-      <h5 style="font-family:'roboto'; font-size:18px">{{report.pelapor}}</h5>    
-      <h6 style="font-family:'roboto'">{{report.date}}</h6>
+      <h5 style="font-family:'roboto'; font-size:18px">{{report.reporterId}}</h5>    
+      <h6 style="font-family:'roboto'">{{report.statusChangedAt}}</h6>
 	  <h6 style="font-family:'roboto'; font-size:17px" ng-class="getStatusClass(report.status)">{{report.status}}</h6>
     </div>
   </div>  

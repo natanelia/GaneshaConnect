@@ -1,68 +1,72 @@
+{
+  "success": true,
+  "reports":
 [
   {
     "id": "1",
     "title": "Toilet",
-    "date": "4 November 2016 21.21",
+    "statusChangedAt": "4 November 2016 21.21",
     "location": "Labtek V",
     "target": "Sarpras",
     "status": "No Status",
     "description": "toilet pertama lalalalalala",
-    "supports": "100",
-    "pelapor": "1"
+    "voteCount": "100",
+    "reporterId": "1"
   },
   {
     "id": "2",
     "title": "Toilet lagi",
-    "date": "14 November 2016 21.21",
+    "statusChangedAt": "14 November 2016 21.21",
     "location": "Labtek VV",
     "target": "Sarpras",
     "status": "approved - Processed",
     "description": "toilet lagi lalalalsdfjpaalalala",
-    "supports": "100",
-    "pelapor": "1"
+    "voteCount": "100",
+    "reporterId": "1"
   },
   {
     "id": "3",
     "title": "Toilet",
-    "date": "4 November 2016 21.21",
+    "statusChangedAt": "4 November 2016 21.21",
     "location": "Labtek V",
     "target": "Sarpras",
     "status": "rejected",
     "description": "lgadsgdsgalalalalala",
-    "supports": "100",
-    "pelapor": "1"
+    "voteCount": "100",
+    "reporterId": "1"
   },
   {
     "id": "4",
     "title": "Toilet",
-    "date": "4 November 2016 21.21",
+    "statusChangedAt": "4 November 2016 21.21",
     "location": "Labtek V",
     "target": "Sarpras",
     "status": "done",
     "description": "lalalalalgdasgasgala",
-    "supports": "100",
-    "pelapor": "4"
+    "voteCount": "100",
+    "reporterId": "4"
   },
   {
     "id": "5",
     "title": "Toilet",
-    "date": "4 November 2016 21.21",
+    "statusChangedAt": "4 November 2016 21.21",
     "location": "Labtek V",
     "target": "Sarpras",
     "status": "Approved - New",
     "description": "lalalalalala",
-    "supports": "100",
-    "pelapor": "2"
+    "voteCount": "100",
+    "reporterId": "2"
   },
   {
     "id": "6",
     "title": "Toilet",
-    "date": "4 November 2016 21.21",
+    "statusChangedAt": "4 November 2016 21.21",
     "location": "Labtek V",
     "target": "Sarpras",
     "status": "no status",
     "description": "lalalalalala",
-    "supports": "100",
-    "pelapor": "3"
+    "voteCount": "100",
+    "reporterId": "3"
   }
 ]
+}

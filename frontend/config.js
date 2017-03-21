@@ -2,6 +2,7 @@ import MainView from './views/main.html';
 import LoginView from './views/login.html';
 import UserView from './views/user.html';
 import DetailView from './views/detail.html';
+import FormView from './views/form.html';
 
 function config($stateProvider, $urlRouterProvider, $locationProvider) {
   $locationProvider.html5Mode(true);
@@ -37,6 +38,13 @@ function config($stateProvider, $urlRouterProvider, $locationProvider) {
       template: DetailView,
       controller: 'ReportController',
       title: 'Ganesha Connect - Details'
+    });
+	
+	$stateProvider
+    .state('form', {
+      url: '/form',
+      template: FormView,
+      title: 'Ganesha Connect - From'
     });
 }
 

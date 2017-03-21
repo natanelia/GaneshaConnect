@@ -4,7 +4,7 @@ function ReportController($scope, $stateParams, $http) {
   //$scope.name = 'world';
 
   $http.get("report.json").then(function(response) {
-    $scope.reports = response.data;
+    $scope.reports = response.data.reports;
     console.log($scope.reports);
     for (var report in $scope.reports) {
 		console.log($stateParams.id);
@@ -25,7 +25,7 @@ function ReportController($scope, $stateParams, $http) {
     console.log($scope.users);
 	for (var user in $scope.users) {
 		console.log($stateParams.id);
-		if ($scope.users[user].id == $scope.activereport.pelapor) {
+		if ($scope.users[user].id == $scope.activereport.reporterId) {
 			$scope.activeuser = $scope.users[user];
 			console.log(user);
 		}

@@ -9,7 +9,7 @@ function MainController($scope, $location, $http, $stateParams) {
   };
 
   $http.get("report.json").then(function(response) {
-    $scope.reports = response.data;
+    $scope.reports = response.data.reports;
     console.log($scope.reports);
   });
   
