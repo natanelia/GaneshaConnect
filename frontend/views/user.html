@@ -1,0 +1,17 @@
+<div ng-include="'header.html'"></div>
+
+<div style="margin: auto; width: 60%; min-width: 1024px">
+  <br>
+  <h3>{{users.length}} Users </h3>
+  <br>
+  <!-- PANEL IS LOOP-ABLE (2 COLUMN) -->
+  <div ng-repeat="user in users">
+    <div class="panel" style="height:100px; width:500px; float:left; padding:12px; margin:4px">
+      <img src="#" style="width:75px; height:75px; border-radius: 37.5px; float:left; margin-right:25px"/>
+      <a href="/"><img ng-src="block.jpg" style="width:auto; height:75px; float:right; margin-right:25px"/> </a>
+      <h4 style="margin-top:3px;">{{user.name}}</h4>
+      <h5 style="font-family:'roboto condensed'">{{user.email}}</h5>   
+      <h5 style="font-family:'roboto condensed'">{{user.prodi}}</h5>
+    </div>
+  </div>
+</div>

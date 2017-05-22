@@ -1,0 +1,26 @@
+[
+  {
+    "id": "1",
+    "name": "Taufiq Akbar Rosyadi",
+    "email": "taro@students.itb.ac.id",
+    "prodi": "Sistem Teknologi Informasi"
+  },
+  {
+    "id": "2",
+    "name": "Nikolas Wangsaputra",
+    "email": "simplicty@students.itb.ac.id",
+    "prodi": "Teknik Informatika"
+  },
+  {
+    "id": "3",
+    "name": "Taro",
+    "email": "taro@students.itb.ac.id",
+    "prodi": "Sistem Teknologi Informasi"
+  },
+  {
+    "id": "4",
+    "name": "Frauhollie",
+    "email": "frau@students.itb.ac.id",
+    "prodi": "Sistem Teknologi Informasi"
+  }
+]
